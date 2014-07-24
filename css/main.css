@@ -1,10 +1,18 @@
 
+
+
 @font-face {
 	font-family: "rounded-mplus-2c-regular";
 	src: url("../fonts/rounded-mplus-2c-regular.ttf");
 }
 
+@font-face {
+	font-family: "rounded-mplus-2c-light";
+	src: url("../fonts/rounded-mplus-2c-light.ttf");
+}
+
 html, body {
+	font-family: "rounded-mplus-2c-regular";
 	margin: 0;
 	padding: 0;
 	height: 100%;
@@ -23,9 +31,10 @@ html, body {
 }
 */
 .nav {
+	font-family: "rounded-mplus-2c-light";
 	z-index: 20;
 	background-color: rgba(0,38,68,1);
-	width: 150px;
+	width: 170px;
 	height: 100%;
 	float: left;
 	box-shadow: 4pt 0 20px rgba(0,0,0,0.4);
@@ -67,6 +76,7 @@ html, body {
 	margin: 10px;
 	text-align: center;
 	min-height: 340px;
+	height: auto;
 	padding: 10px;
 }
 
@@ -87,12 +97,90 @@ html, body {
 	color: rgba(0,150,255,1.0);
 }
 
-@media (max-width:400px) {
+.nav li {
+	list-style-type: none;
+	min-height: 50px;
+}
+
+.nav li.selected {
+	background-color: rgba(0,150,255,1.0);
+}
+
+.nav-image {
+	margin: 5px 10px;
+	margin-right: 0;
+	width: 40px;
+	float: left;
+}
+
+
+h2.nav-text {
+	font-family: "rounded-mplus-2c-light";
+	font-size: 15px;
+	color: #FFF;
+	margin: 10px;
+	margin-right: 5px;
+	width: 90px;
+	line-height: 30px;
+	float: right;
+}
+
+
+
+@media only screen and (min-width : 800px) and (max-width: 1200px) {
+	.content {
+		width: 80%;
+	}
+}
+
+
+/*smartphones*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.nav {
 		display: none;
 	}
 
 	.content {
+		width: 96%;
+	}
+
+	.box {
+		font-size: 3em;
+	}
+
+	.box h2 {
+		font-size: 1.2em;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+	.nav {
+		display: none;
+	}
+	.content {
 		width: 95%;
 	}
 }
+
+/*desktop,laptops*/
+@media only screen and (min-width : 1224px) {
+	.nav {
+		display: block;
+	}
+
+	.content {
+		width: 85%;
+	}
+}
+
+
+/*ipads*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.content {
+		width: 80%;
+	}
+}
+
