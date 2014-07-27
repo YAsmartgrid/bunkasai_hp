@@ -1,0 +1,51 @@
+.box2 {
+	/*height: 100px;*/
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	margin: 10px;
+	text-align: center;
+	min-height: 50px;
+	height: auto;
+	padding: 10px;
+	font-size: 1.2em;
+}
+
+.item {
+	width: 25%;
+}
+
+.vertical {
+	width: 13%;
+}
+
+
+
+@media only screen and (min-width : 800px) and (max-width: 1000px) {
+	.item {
+	width: 30%;
+	}
+	
+}
+
+@media only screen and (min-width : 300px) and (max-width: 800px) {
+	.item {
+	width: 100%;
+	}
+	
+}
+
+@media only screen and (min-width : 300px) and (max-width: 500px) {
+	.item {
+	width: 100%;
+	}
+	
+}
+
+
+/*smartphones*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.item {
+		width: 50%;
+	}
+
+}
+
