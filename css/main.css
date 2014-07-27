@@ -139,6 +139,31 @@ h2.nav-text {
 	float: right;
 }
 
+.upperblock {
+	width: 100%;
+	margin:0;
+}
+
+.box-group {
+	width: 60%;
+	float: left;
+}
+
+.box1 {
+	width: 60%;
+	float: left;
+}
+
+.box2 {
+	width: 30%;
+	float: right;
+}
+
+.box-img {
+	min-height: 50px;
+}
+
+
 
 @media only screen and (min-width : 600px) and (max-width: 800px) {
 	.content {
