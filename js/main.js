@@ -3,6 +3,9 @@
 $(document).ready(function() {
 
 	$(".nav-small").click(function() {
-		$(".nav-small-content").fadeToggle(100);
+		$(".nav-small-content").fadeToggle(500);
 	});
+
+	
 });
+
